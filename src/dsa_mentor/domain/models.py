@@ -10,6 +10,8 @@ class MentorMode(StrEnum):
     REVIEW = "review"
     INTERVIEW = "interview"
     PATTERN_MAPPER = "pattern_mapper"
+    VISUALIZER = "visualizer"
+
 
 
 class ProblemReferenceKind(StrEnum):

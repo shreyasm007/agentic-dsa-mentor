@@ -16,7 +16,9 @@ SPECIALIST_MODES = (
     MentorMode.REVIEW,
     MentorMode.INTERVIEW,
     MentorMode.PATTERN_MAPPER,
+    MentorMode.VISUALIZER,
 )
+
 
 
 class MentorState(TypedDict, total=False):

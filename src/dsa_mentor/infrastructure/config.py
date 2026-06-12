@@ -12,10 +12,11 @@ class Settings(BaseSettings):
     qdrant_collection: str = "dsa_mentor_knowledge"
     voyage_model: str = "voyage-3.5-lite"
     groq_models_raw: str = Field(
-        default="openai/gpt-oss-120b,openai/gpt-oss-20b,llama-3.3-70b-versatile",
+        default="openai/gpt-oss-120b,openai/gpt-oss-20b,llama-3.3-70b-versatile,llama-3.2-11b-vision-preview,llama-3.1-8b-instant",
         validation_alias="GROQ_MODELS",
     )
-    default_groq_model: str = "openai/gpt-oss-120b"
+    default_groq_model: str = "llama-3.3-70b-versatile"
+
 
     model_config = SettingsConfigDict(
         env_file=".env",

@@ -17,6 +17,10 @@ def route_message(message: str, selected_mode: str = "auto") -> MentorMode:
             MentorMode.PATTERN_MAPPER,
             ("what pattern", "which pattern", "which technique", "similar problems"),
         ),
+        (
+            MentorMode.VISUALIZER,
+            ("draw", "flowchart", "diagram", "visualize", "sketch"),
+        ),
         (MentorMode.TUTOR, ("explain", "teach me", "what is", "how does", "don't understand")),
     ]
     for mode, phrases in rules:

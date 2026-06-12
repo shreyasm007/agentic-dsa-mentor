@@ -11,8 +11,11 @@ from dsa_mentor.domain.models import MentorMode
         ("Review my code", MentorMode.REVIEW),
         ("Run a mock interview", MentorMode.INTERVIEW),
         ("What pattern is this?", MentorMode.PATTERN_MAPPER),
+        ("Draw a flowchart of this", MentorMode.VISUALIZER),
+        ("Visualize the solution steps", MentorMode.VISUALIZER),
         ("Explain dynamic programming", MentorMode.TUTOR),
     ],
+
 )
 def test_route_message(message: str, expected: MentorMode) -> None:
     assert route_message(message) == expected
