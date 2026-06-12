@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: agentic-dsa-mentor
+Version: 0.1.0
+Summary: A multi-agent DSA mentor with automatic LeetCode problem resolution
+Requires-Python: >=3.11
+Requires-Dist: beautifulsoup4<5,>=4.12
+Requires-Dist: httpx<1,>=0.27
+Requires-Dist: langchain-core<1,>=0.3
+Requires-Dist: langchain-groq<1,>=0.2
+Requires-Dist: langgraph<1,>=0.2
+Requires-Dist: pydantic-settings<3,>=2.5
+Requires-Dist: qdrant-client<2,>=1.12
+Requires-Dist: streamlit<2,>=1.40
+Requires-Dist: voyageai<1,>=0.3
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8; extra == "dev"
+Requires-Dist: ruff<1,>=0.8; extra == "dev"

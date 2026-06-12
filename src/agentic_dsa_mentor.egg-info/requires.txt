@@ -1,0 +1,13 @@
+beautifulsoup4<5,>=4.12
+httpx<1,>=0.27
+langchain-core<1,>=0.3
+langchain-groq<1,>=0.2
+langgraph<1,>=0.2
+pydantic-settings<3,>=2.5
+qdrant-client<2,>=1.12
+streamlit<2,>=1.40
+voyageai<1,>=0.3
+
+[dev]
+pytest<9,>=8
+ruff<1,>=0.8
